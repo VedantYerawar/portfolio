@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+:root {
+  /* */
+  --color-body: #18a2b6;
+  --color-heading: #cbcdc6;
+  --color-base: #f5f9f9;
+  --color-base2: #43421c;
+  --color-brand: #2b3033;
+  --color-brand2: #9a9a85;
+  --sidbar-width: 240px;
+  --font-base: "Bai Jamjuree";
+}
+
+.body1 {
+  background-color: transparent;
+  color: var(--color-body);
+  font-family: var(--font-base), sans-serif;
+}
+#home h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: #1e1c1c;
+}
+#p12 {
+  color: #1a1919;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(#9a5ab1);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+img {
+  width: 100%;
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.bg-base {
+  background-color: #74e1e1;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(145, 135, 135, 0.1);
+}
+
+.shadow-effect {
+  transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+  transform: scale(1.02);
+}
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
+}
+#w1 {
+  text-align: center;
+  text-decoration: underline;
+}
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f9f7f7;
+  display: inline-block;
+  padding: 0.3em;
+}
+
+.navbar .nav-link:hover {
+  border-radius: 5px;
+  border: 1px solid black;
+  background: #5e5757;
+  color: rgb(237, 239, 235);
+  display: inline-block;
+  padding: 0.3em;
+}
+
+.navbar .nav-link.active {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgb(41, 46, 34);
+  padding: 0.3em;
+}
+.navbar .nav-link.active:hover {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background-color: #b096b5; /* nav background-color */
+    border: 2px solid black;
+  }
+  /* .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background-image: linear-gradient(to bottom, #c9d58e, #9bb5ce); /* Replace these color values with your desired gradient */
+}
+
+.navbar-brand img {
+  border: 1px solid black;
+  /*profile pic */
+}
+
+/* CONTENT WRAPPER */
+#content-wrapper {
+  padding-left: var(--sidbar-width);
+}
+
+/* BTN */
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+/* .link-custom {
+  font-weight: 700;
+  position: relative;
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+} */
+.link-custom {
+  font-weight: 700;
+  display: block; /* Make each link occupy a full line */
+  position: relative;
+  margin-bottom: 5px; /* Add some space between the items */
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+#hello {
+  color: black;
+  background-color: #83c3cb;
+  width: fit-content;
+  border: 15px solid #83c3cb;
+  border-radius: 11px 11px 11px 0;
+  margin-bottom: 10px;
+}
+#bl {
+  background-color: #76a9b0;
+  height: 0;
+}
+/* CARD */
+.card-custom .card-custom-image {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.card-custom .card-custom-image img {
+  transition: all 0.2s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.01);
+}
+
+.wcard {
+  padding: 1.5rem;
+  object-fit: contain;
+}
+/* CONTACT */
+#contact .form-control {
+  background-color: #aedede;
+  border-color: black;
+  color: var(--color-body);
+}
+
+#contact .form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+/* background images */
+#home {
+  /*pencil: https://images.pexels.com/photos/544115/pexels-photo-544115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+  /* */
+  background-image: url(" https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* Add other styling properties as needed */
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#services {
+  background-image: url("https://images.pexels.com/photos/8823345/pexels-photo-8823345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* Add other styling properties as needed */
+  background-size: cover;
+  background-position: center;
+  /* border-top: 2px solid black; */
+  border-bottom: 2px solid black;
+}
+#about {
+  background-image: url("https://images.pexels.com/photos/10215986/pexels-photo-10215986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* Add other styling properties as needed */
+  background-size: cover;
+  background-position: center;
+  /* border-top: 2px solid black; */
+  border-bottom: 2px solid black;
+}
+#work {
+  /* background-image: url("https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+  /* background-size: cover;
+  background-position: center; */
+  background-color: #e6e6cc;
+  /* border-top: 2px solid black; */
+  border-bottom: 2px solid black;
+}
+#reviews {
+  background-image: url("https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  background-color: #dcd5d5;
+  /* border-top: 2px solid black; */
+  border-bottom: 2px solid black;
+}
+#contact {
+  background-image: url("https://images.pexels.com/photos/5208357/pexels-photo-5208357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  /* border-top: 2px solid black; */
+  border-bottom: 2px solid black;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+}
+/* #h11 {
+  /* background-image: url("https://th.bing.com/th/id/R.28abe49377ce5b811ec026ff4806920b?rik=rMoC3QQaU8tbeA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-person-walking-displaying-19-images-for-people-walking-dogs-png-1100.png&ehk=nHDlqq%2fsO15JtuMxxBKe4KD%2bkGlUJ0cjRoJTmVXSigo%3d&risl=&pid=ImgRaw&r=0");
+  background-size: contain;
+  background-position: right center; /* Aligns the image to the right and vertically centered */
+/* background-repeat: no-repeat;
+  height: 30vh;  */
+
+.wim {
+  height: 240px;
+  width: 285px;
+}
+/* making img of same size */
+
+
+
+/* main */
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
+  margin-right: 10px; /* Space between icons */
+  color: var(--color-body); /* Icon color */
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--color-brand);
+  color: var(--color-base);
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+.social-icons a:hover i {
+  transform: rotate(360deg); /* Rotate icon on hover */
+  transition: transform 0.5s ease-in-out; /* Animation timing */
+}
+
+
+
+/* .social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
+} */
+
+
+
+
+
+h1,
+p {
+  color: rgb(41, 38, 38);
+}
+
+/* ////////////////////// typing animation */
+#typingText {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  /* background-color: aqua; */
+  max-width: fit-content;
+
+  /* width: 20rem; */
+}
+
+#typingText {
+  font-size: 3em;
+  font-weight: 20;
+  letter-spacing: 10px;
+  font-family: "Bai Jamjuree", Times, serif; /* Use the desired font */
+  border-right: 2px solid #56283e;
+  width: 100%;
+  /* width: fit-content; */
+  overflow-x: hidden;
+  animation: typing 3s steps(1000) infinite;
+  color: #56283e;
+}
+
+@keyframes typing {
+  0%,
+  75%,
+  100% {
+    width: 0;
+  }
+  25%,
+  50% {
+    width: 100%;
+  }
+}
+/* /////////////// */
+/* footer */
+/* #foot {
+  height: 2rem;
+} */
+@media (max-width: 991px) {
+  .navbar {
+    min-height: auto;
+    width: 100%;
+    background-color: #b096b5; /* Adjust as needed */
+    border: 2px solid black;
+  }
+
+  #content-wrapper {
+    padding-left: 0;
+  }
+
+  .full-height {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar .nav-link {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  .iconbox {
+    width: 40px;
+    height: 40px;
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  #typingText {
+    font-size: 2em; /* Adjust font size for mobile */
+    letter-spacing: 5px; /* Adjust letter spacing for mobile */
+  }
+
+  #hello {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* Add additional styles or overrides as needed for mobile layout */
+}
